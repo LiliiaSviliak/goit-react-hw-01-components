@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:darkgrey;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .friendsListItem {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .statusIdentificationOnline {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: green;
+  }
+  
+  .statusIdentificationOffline {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: red;
+  }
+  
+  .friendsListImg {
+    width: calc(100% / 5);
+    margin-right: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      width: calc((100% / 2) - 10px);
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }
+  }
